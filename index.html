@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SHAMZ Beauty Spot</title>
+<meta name="description" content="SHAMZ Beauty Spot: Mobile Services, Hair &amp; Makeup. Look Good. Feel Confident. Anywhere. Kampala &amp; Surrounding Areas. Call or WhatsApp 0759 149 922.">
+<meta name="theme-color" content="#2A0B18">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHAMZ Beauty Spot">
+<meta property="og:title" content="SHAMZ Beauty Spot">
+<meta property="og:description" content="SHAMZ Beauty Spot: Mobile Services, Hair &amp; Makeup. Look Good. Feel Confident. Anywhere. Kampala &amp; Surrounding Areas. Call or WhatsApp 0759 149 922.">
+<meta property="og:url" content="https://shamz-beauty-spot.vercel.app/">
+<meta property="og:image" content="https://shamz-beauty-spot.vercel.app/img/og.027cccd7.jpg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="315">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:ital,wght@0,700;0,800;1,600;1,700;1,800&family=Jost:wght@400;500;600;700&display=swap">
+<style>
+:root{
+--bg:#F8E7E2;
+--bg-2:#F3DBD5;
+--card:#FFFCF8;
+--mat:#FFFCF8;
+--ink:#2B1219;
+--ink-2:#5B3841;
+--line:#E2C3BB;
+--hair:rgba(140,75,87,.32);
+--label:#8C4B57;
+--on-mat:#8C4B57;
+--pink:#D81B7E;
+--pink-text:#D81B7E;
+--pink-grad:linear-gradient(180deg,#DE2184 0%,#C2126D 100%);
+--on-pink:#FFFFFF;
+--focus:#D81B7E;
+--wine-0:#1E0710;
+--wine:#2A0B18;
+--wine-2:#3A1127;
+--ivory:#FBEFE8;
+--ivory-2:#DDBFB8;
+--foil-solid:#E4A99A;
+--foil:linear-gradient(100deg,#F6D6C8 0%,#DDA091 24%,#FCE4D8 42%,#D08779 60%,#EDBFAF 80%,#B8706A 100%);
+--foil-deep:linear-gradient(135deg,#EBBBAA 0%,#B97A72 26%,#EDBFAF 48%,#A55F66 74%,#D9A08F 100%);
+--foil-seal:linear-gradient(135deg,#FBDCCD 0%,#E0A596 30%,#F8D5C6 52%,#C98277 78%,#E8B4A4 100%);
+--frame-foil:var(--foil-deep);
+--keyline:var(--foil-deep);
+--rule:linear-gradient(90deg,#B97A72,rgba(185,122,114,0));
+--shadow:0 1px 1px rgba(70,25,35,.20),0 9px 16px -7px rgba(70,25,35,.36),0 20px 28px -18px rgba(70,25,35,.22);
+--pink-shadow:0 1px 1px rgba(110,20,60,.30),0 10px 18px -8px rgba(110,20,60,.50);
+--grain-wine:url("img/grain_l.f8315c12.png");
+--grain-paper:url("img/grain_d.7012d6f4.png");
+--quilt:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath d='M0 0L30 30M30 0L0 30' stroke='%23E4A99A' stroke-opacity='.075' fill='none'/%3E%3Cg fill='%23E4A99A' fill-opacity='.15'%3E%3Ccircle cx='15' cy='15' r='1.2'/%3E%3Ccircle cx='0' cy='0' r='1.2'/%3E%3Ccircle cx='30' cy='0' r='1.2'/%3E%3Ccircle cx='0' cy='30' r='1.2'/%3E%3Ccircle cx='30' cy='30' r='1.2'/%3E%3C/g%3E%3C/svg%3E");
+--serif:'Bodoni Moda','Bodoni 72',Didot,Georgia,serif;
+--sans:'Jost','Avenir Next',Avenir,system-ui,-apple-system,'Segoe UI',sans-serif;
+--script:'Allura','Snell Roundhand','Segoe Script',cursive;
+--gl:max(16px,env(safe-area-inset-left,0px));
+--gr:max(16px,env(safe-area-inset-right,0px));
+color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]){
+--bg:#13070D;
+--bg-2:#1D0E16;
+--card:#24121C;
+--ink:#F7E6E0;
+--ink-2:#D8B9B4;
+--line:#47293A;
+--hair:rgba(228,169,154,.30);
+--label:#E4A99A;
+--pink-text:#F2609F;
+--focus:#F2609F;
+--frame-foil:var(--foil);
+--keyline:var(--foil);
+--rule:linear-gradient(90deg,#DDA091,rgba(221,160,145,0));
+--grain-paper:var(--grain-wine);
+--shadow:0 1px 1px rgba(0,0,0,.55),0 12px 20px -8px rgba(0,0,0,.75);
+color-scheme:dark;
+}
+}
+:root[data-theme="dark"]{
+--bg:#13070D;
+--bg-2:#1D0E16;
+--card:#24121C;
+--ink:#F7E6E0;
+--ink-2:#D8B9B4;
+--line:#47293A;
+--hair:rgba(228,169,154,.30);
+--label:#E4A99A;
+--pink-text:#F2609F;
+--focus:#F2609F;
+--frame-foil:var(--foil);
+--keyline:var(--foil);
+--rule:linear-gradient(90deg,#DDA091,rgba(221,160,145,0));
+--grain-paper:var(--grain-wine);
+--shadow:0 1px 1px rgba(0,0,0,.55),0 12px 20px -8px rgba(0,0,0,.75);
+color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+margin:0;
+background:var(--bg) var(--grain-paper);
+color:var(--ink);
+font-family:var(--sans);
+font-size:17px;
+line-height:1.5;
+overflow-x:clip;
+-webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%}
+a{color:inherit}
+p{margin:0}
+.wrap{width:100%;max-width:1120px;margin-inline:auto;padding-left:var(--gl);padding-right:var(--gr)}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+::selection{background:var(--pink);color:#fff}
+.ic{width:22px;height:22px;flex:none;display:block}
+.ic.sm{width:16px;height:16px}
+.dm{flex:none;display:inline-block;width:.42em;height:.42em;background:var(--foil-deep);transform:rotate(45deg)}
+.wine{
+--ink:var(--ivory);
+--ink-2:var(--ivory-2);
+--line:rgba(228,169,154,.30);
+--hair:rgba(228,169,154,.34);
+--label:var(--foil-solid);
+--pink-text:#F46AA6;
+--frame-foil:var(--foil);
+--keyline:var(--foil);
+--rule:linear-gradient(90deg,#DDA091,rgba(221,160,145,0));
+--shadow:0 1px 1px rgba(0,0,0,.5),0 16px 26px -10px rgba(0,0,0,.72);
+--focus:#F6D6C8;
+color:var(--ivory);
+}
+.stage{position:relative;isolation:isolate;background:
+var(--grain-wine),
+var(--quilt),
+radial-gradient(80% 60% at 50% 0%,rgba(110,32,74,.42) 0%,rgba(110,32,74,0) 70%),
+linear-gradient(180deg,#2E0D1C 0%,#2A0B18 55%,#220912 100%)}
+.stage::before,.stage::after{content:"";position:absolute;left:0;right:0;height:7px;z-index:2;pointer-events:none;background-image:var(--foil),var(--foil);background-repeat:no-repeat;background-size:100% 3px,100% 1px}
+.stage::before{top:0;background-position:0 0,0 6px}
+.stage::after{bottom:0;background-position:0 4px,0 0}
+.foil-t{color:#EDBFAF}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+.foil-t{background-image:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;padding:0 .1em .2em 0;margin-bottom:-.2em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+}
+@media (forced-colors:active){
+.foil-t{background:none;-webkit-text-fill-color:currentColor;color:CanvasText}
+}
+.hero-stage{padding-bottom:clamp(60px,11vw,104px);background:
+var(--grain-wine),
+var(--quilt),
+radial-gradient(58% 52% at 78% 36%,rgba(128,38,86,.62) 0%,rgba(128,38,86,0) 72%),
+radial-gradient(90% 70% at 0% 0%,rgba(90,26,62,.5) 0%,rgba(90,26,62,0) 62%),
+linear-gradient(172deg,#3A1127 0%,#2A0B18 52%,#1E0710 100%)}
+.hero-stage::before{display:none}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0 24px}
+.brand{display:flex;align-items:center;gap:14px;min-width:0}
+.logo{flex:none;width:62px;height:62px;border-radius:50%;padding:2.5px;background:var(--foil);box-shadow:0 1px 1px rgba(0,0,0,.45),0 10px 18px -6px rgba(0,0,0,.7)}
+.logo span{display:block;width:100%;height:100%;border-radius:50%;background:#fff;overflow:hidden}
+.logo img{display:block;width:101.5%;height:101.5%;max-width:none}
+.brand .script{font:400 32px/.95 var(--script);color:#F0C4B5;transform:rotate(-2deg);white-space:nowrap}
+.brand .script span{display:block;padding-left:.55em}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px 0 14px;border-radius:999px;background:var(--pink-grad);color:var(--on-pink);text-decoration:none;font:600 15px/1 var(--sans);letter-spacing:.02em;box-shadow:0 0 0 1px rgba(246,214,200,.55),var(--pink-shadow);white-space:nowrap}
+.chip .ic{width:20px;height:20px}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:0 28px;border-radius:999px;text-decoration:none;font:600 18px/1 var(--sans);letter-spacing:.02em;-webkit-tap-highlight-color:transparent;transition:transform .12s ease;overflow:hidden;isolation:isolate}
+.btn::after{content:"";position:absolute;inset:3.5px;border-radius:inherit;border:1.2px solid rgba(250,214,200,.72);pointer-events:none}
+.btn:active{transform:translateY(1px)}
+.btn-pink{background:var(--pink-grad);color:var(--on-pink);box-shadow:0 0 0 1px rgba(246,214,200,.38),var(--pink-shadow)}
+.btn-pink::before{content:"";position:absolute;top:-10%;bottom:-10%;left:0;width:38%;background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,238,228,.42) 50%,rgba(255,255,255,0) 100%);transform:translateX(-160%) skewX(-18deg);animation:sheen 6s ease-in-out 1.5s infinite;pointer-events:none}
+@keyframes sheen{0%{transform:translateX(-160%) skewX(-18deg)}34%,100%{transform:translateX(420%) skewX(-18deg)}}
+.frame{position:relative;margin:0;isolation:isolate;transform:rotate(var(--rot,0deg))}
+.frame::before{content:"";position:absolute;inset:0;transform:translate(var(--ex,9px),var(--ey,9px));border-radius:var(--r);border:1.6px solid #C98A82;z-index:-1}
+@supports ((-webkit-mask-composite:xor) or (mask-composite:exclude)){
+.frame::before{border:0;padding:1.6px;background:var(--keyline);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+}
+.frame .mat{position:relative;aspect-ratio:var(--ar);background:var(--mat);border-radius:var(--r);box-shadow:var(--shadow)}
+.frame .ph{position:absolute;inset:5px;overflow:hidden;border-radius:var(--ri);background:#d8c0bc}
+.frame img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:var(--pos,50% 30%)}
+.arch{--ar:3/4;--rx:37.5%;--r:50% 50% 12px 12px/var(--rx) var(--rx) 12px 12px;--ri:50% 50% 8px 8px/var(--rx) var(--rx) 8px 8px}
+.circle{--ar:1/1;--r:50%;--ri:50%}
+.round{--ar:4/5;--r:16px;--ri:11px}
+.pill{position:absolute;left:50%;bottom:-9px;transform:translateX(-50%);z-index:3;white-space:nowrap;padding:6px 13px 5px;border-radius:999px;background:var(--mat);color:var(--on-mat);font:700 9.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;box-shadow:0 1px 1px rgba(40,10,25,.28),0 5px 9px -3px rgba(40,10,25,.38)}
+.badge{position:absolute;z-index:4;display:grid;place-items:center;width:var(--d,86px);height:var(--d,86px);border-radius:50%;background:var(--foil-seal);color:var(--wine);text-align:center;font:italic 800 calc(var(--d,86px)*.215)/1.02 var(--serif);transform:rotate(-10deg);box-shadow:0 1px 1px rgba(0,0,0,.4),0 12px 20px -6px rgba(0,0,0,.7)}
+.badge::before{content:"";position:absolute;inset:6%;border-radius:50%;border:1.4px dashed rgba(42,11,24,.62)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) clamp(150px,41vw,290px);grid-template-areas:"copy photo" "cta cta";column-gap:clamp(12px,3.4vw,30px);row-gap:36px;padding-top:6px}
+.hero-copy{grid-area:copy;min-width:0;padding-top:4px}
+.hero-photo{grid-area:photo;position:relative;align-self:start;margin:0 10px 10px 0}
+.hero-photo .frame{--ex:10px;--ey:10px;--ar:5/7;--rx:35.7%}
+.hero-photo .badge{--d:clamp(72px,22vw,96px);left:calc(var(--d)*-.34);bottom:6px}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 14px;font:600 11px/1.2 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--label)}
+.kicker span{white-space:nowrap}
+.kicker i{flex:1;min-width:12px;height:1px;background:var(--rule)}
+h1{margin:0;font:800 clamp(38px,11.6vw,96px)/.92 var(--serif);letter-spacing:-.02em;color:var(--ink)}
+h1 span{display:block}
+h1 em{display:block;width:fit-content;max-width:100%;font-style:italic}
+.swash{display:block;width:min(88%,170px);height:auto;margin:10px 0 18px -2px;overflow:visible;filter:url(#hand)}
+.tag{list-style:none;margin:0;padding:0;font:italic 600 clamp(17px,calc(3.2vw + 6px),26px)/1.4 var(--serif);color:var(--ink)}
+.tag li{display:flex;align-items:center;gap:.6em}
+.tag li::before{content:"";flex:none;width:.36em;height:.36em;background:var(--foil-solid);transform:rotate(45deg)}
+.hero-cta{grid-area:cta;display:grid;gap:16px}
+.hero-cta .btn{width:100%}
+.phone{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 14px;font:500 15px/1.3 var(--sans);color:var(--ink-2)}
+.phone a{font:800 28px/1 var(--serif);letter-spacing:-.01em;color:var(--ink);text-decoration:none;white-space:nowrap}
+.area{display:flex;align-items:center;gap:8px;font:600 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--label)}
+.sec{padding-top:clamp(56px,10vw,96px)}
+.sh{display:flex;align-items:center;gap:16px;margin:0;font:800 clamp(28px,7.4vw,38px)/1.05 var(--serif);letter-spacing:-.01em;color:var(--ink)}
+.sh span{flex:0 1 auto}
+.sh em{font-style:italic;font-weight:700;color:var(--pink-text);white-space:nowrap}
+.sh em.foil-t{padding-bottom:.2em}
+.sh i{flex:1 1 0;min-width:0;height:1px;background:var(--rule)}
+.lead{margin:12px 0 0;max-width:46ch;color:var(--ink-2);font-size:16.5px}
+.menu{position:relative;margin-top:30px;padding:30px 22px 14px;border-radius:12px;border:1.5px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,var(--frame-foil) border-box;box-shadow:var(--shadow)}
+.menu::before{content:"";position:absolute;inset:6px;border-radius:7px;border:1px solid var(--hair);pointer-events:none}
+.menu-grid{position:relative;display:grid}
+.svc-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+.svc-block h3{margin:0;font:800 clamp(36px,10vw,46px)/.95 var(--serif);letter-spacing:-.02em;color:var(--ink)}
+.svc-block h3 em{display:block;font-style:italic;color:var(--pink-text)}
+.svc-head .frame{flex:none;width:86px;margin-right:7px;--ex:7px;--ey:7px}
+.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.svc-list li{border-bottom:1px solid var(--line)}
+.svc-list li:last-child{border-bottom:0}
+.svc{display:flex;align-items:center;gap:14px;min-height:60px;padding:6px 2px;text-decoration:none;font:500 18px/1.25 var(--sans);color:var(--ink)}
+.svc .dm{width:7px;height:7px}
+.svc .t{flex:1;min-width:0}
+.svc .go{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;border:1.5px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,var(--frame-foil) border-box;color:var(--label)}
+.svc .go .ic{width:21px;height:21px}
+@media (hover:hover){
+.svc:hover .go{background:linear-gradient(var(--pink),var(--pink)) padding-box,var(--frame-foil) border-box;color:#fff}
+.svc:hover .t{color:var(--pink-text)}
+}
+.svc:focus-visible .go{background:linear-gradient(var(--pink),var(--pink)) padding-box,var(--frame-foil) border-box;color:#fff}
+.orn{display:flex;align-items:center;gap:12px;margin:28px 0 26px}
+.orn i{flex:1;height:1px;background:var(--frame-foil)}
+.orn b{flex:none;width:9px;height:9px;background:var(--frame-foil);transform:rotate(45deg)}
+.work{padding-block:clamp(64px,11vw,104px) clamp(36px,7vw,72px)}
+.rail{--u:min(60vw,228px);display:flex;align-items:center;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(-1*var(--gl)) calc(-1*var(--gr));padding:26px var(--gr) 48px var(--gl);scroll-padding-inline:var(--gl);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.rail .frame{flex:none;width:calc(var(--u)*var(--k,1));scroll-snap-align:start}
+.rail .circle{--k:.8}
+.rail .round{--k:.92}
+.trust{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 22px}
+.trust li{display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:24px 0 26px;border-top:1px solid var(--line)}
+.ti{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;border:1.5px solid transparent;background:radial-gradient(circle at 32% 26%,#5A1B3E 0%,#2A0B18 74%) padding-box,var(--foil-deep) border-box;box-shadow:0 1px 1px rgba(40,10,25,.3),0 10px 16px -8px rgba(40,10,25,.55)}
+.ti svg{width:26px;height:26px;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.trust b{font:italic 600 clamp(19px,5.4vw,24px)/1.15 var(--serif)}
+.panel{position:relative;display:grid;gap:28px;margin-top:26px;padding:28px 20px 28px;border-radius:12px;border:1.5px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,var(--frame-foil) border-box;box-shadow:var(--shadow)}
+.panel::before{content:"";position:absolute;inset:6px;border-radius:7px;border:1px solid var(--hair);pointer-events:none}
+.panel>*{position:relative}
+.fields{display:grid;gap:18px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.out .lab{font:600 11.5px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--label)}
+.field input,.field select{width:100%;min-width:0;min-height:54px;padding:0 16px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:500 17px/1.2 var(--sans);-webkit-appearance:none;appearance:none}
+.field input::placeholder{color:var(--ink-2);opacity:.65}
+.field input:focus,.field select:focus{outline:3px solid var(--focus);outline-offset:2px;border-color:var(--pink)}
+.sel{position:relative}
+.sel select{padding-right:46px}
+.sel::after{content:"";position:absolute;right:20px;top:50%;width:9px;height:9px;border-right:2px solid var(--label);border-bottom:2px solid var(--label);transform:translateY(-72%) rotate(45deg);pointer-events:none}
+.out{display:grid;gap:14px;align-content:start}
+.bubble{padding:15px 18px;border-radius:18px 18px 4px 18px;background:var(--bg-2);border:1.5px solid var(--line);font:400 16.5px/1.5 var(--sans);white-space:pre-line;overflow-wrap:anywhere}
+.out .btn{width:100%}
+.note{font-size:14px;color:var(--ink-2)}
+.close{margin-top:clamp(64px,11vw,108px);padding-block:clamp(56px,10vw,92px) calc(40px + 92px + env(safe-area-inset-bottom,0px))}
+.band{position:relative;display:grid;gap:26px;padding:44px 24px 38px;border-radius:12px;background:linear-gradient(160deg,rgba(255,226,214,.06),rgba(255,226,214,0) 62%)}
+.band::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1.5px solid #C98A82;pointer-events:none}
+@supports ((-webkit-mask-composite:xor) or (mask-composite:exclude)){
+.band::before{border:0;padding:1.5px;background:var(--foil);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+}
+.band::after{content:"";position:absolute;inset:7px;border-radius:7px;border:1px solid rgba(228,169,154,.28);pointer-events:none}
+.band>*{position:relative;z-index:1}
+.band .copy{display:grid;gap:24px;justify-items:stretch;min-width:0}
+.band h2{margin:0;font:italic 800 clamp(34px,9.6vw,58px)/1.04 var(--serif);letter-spacing:-.01em;color:var(--ink)}
+.band h2 span{display:block;margin-bottom:8px;font-size:.5em;font-weight:600;letter-spacing:.01em;color:var(--ivory-2)}
+.band h2 em{display:block;width:fit-content;max-width:100%}
+.band .copy .btn{width:100%}
+.qr{display:none}
+.foot{display:grid;justify-items:center;gap:16px;padding:46px 0 0;text-align:center;color:var(--ink-2);font-size:15px}
+.foot .brand{flex-direction:column;gap:10px}
+.foot .script{font:400 clamp(32px,9vw,40px)/1 var(--script);color:#F0C4B5;transform:none;white-space:normal}
+.foot .phone a{font-size:22px}
+.foot a{text-decoration:none;color:var(--ink);font:800 22px/1 var(--serif)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:16px var(--gr) calc(12px + env(safe-area-inset-bottom,0px)) var(--gl);background:linear-gradient(to top,rgba(30,7,16,.97) 62%,rgba(30,7,16,0));transition:transform .25s ease}
+.bar .btn{width:100%;min-height:56px}
+.bar.is-hidden{transform:translateY(115%);visibility:hidden;transition:transform .25s ease,visibility 0s .25s}
+@media (max-width:389px){
+.kicker{letter-spacing:.2em;font-size:10.5px}
+h1{font-size:11vw}
+.hero-photo .badge{--d:74px}
+}
+@media (max-width:359px){
+.logo{width:52px;height:52px}
+.brand{gap:10px}
+.brand .script{font-size:25px}
+.chip{padding:0 14px 0 11px;font-size:14px;gap:6px}
+.hero{grid-template-columns:minmax(0,1fr) 132px}
+.tag{font-size:16px}
+.area{letter-spacing:.12em;font-size:11px}
+.phone a{font-size:25px}
+}
+@media (min-width:600px){
+.rail{--u:min(34vw,240px)}
+}
+@media (min-width:880px){
+:root{--gl:max(32px,env(safe-area-inset-left,0px));--gr:max(32px,env(safe-area-inset-right,0px))}
+.bar{display:none}
+.close{padding-bottom:56px}
+.top{padding:24px 0 34px}
+.logo{width:74px;height:74px}
+.brand .script{font-size:42px}
+.chip{min-height:50px;padding:0 24px 0 18px;font-size:16px}
+.hero{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);grid-template-areas:"copy photo" "cta photo";column-gap:72px;row-gap:36px;align-items:center;padding-top:20px}
+.hero-copy{align-self:end}
+.hero-cta{align-self:start;grid-template-columns:auto 1fr;align-items:center;column-gap:30px;row-gap:18px}
+.hero-cta .btn{width:auto;min-width:270px}
+.hero-cta .area{grid-column:1/-1}
+.kicker{font-size:12.5px;margin-bottom:20px}
+h1{font-size:clamp(88px,9.4vw,124px)}
+.swash{width:min(100%,300px);margin:14px 0 24px -4px}
+.tag{display:flex;flex-wrap:wrap;gap:.3em 1em;font-size:24px}
+.tag li:first-child::before{display:none}
+.hero-photo{justify-self:center;width:min(100%,430px);margin:0 12px 12px 0}
+.hero-photo::before{content:"";position:absolute;inset:-30px -24px -8px -30px;border:1px solid rgba(228,169,154,.4);border-radius:50% 50% 18px 18px/34% 34% 18px 18px;pointer-events:none}
+.hero-photo .frame{--ex:14px;--ey:14px}
+.hero-photo .badge{--d:120px;left:-52px;top:104px;bottom:auto}
+.sh{font-size:44px}
+.lead{font-size:18px}
+.menu{margin-top:38px;padding:48px 52px 30px}
+.menu::before{inset:8px;border-radius:8px}
+.menu-grid{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);column-gap:56px}
+.orn{flex-direction:column;margin:6px 0}
+.orn i{width:1px;height:auto;flex:1;background:linear-gradient(to bottom,transparent,#B97A72 14%,#B97A72 86%,transparent)}
+.svc-head .frame{width:112px;--ex:9px;--ey:9px}
+.svc-block h3{font-size:56px}
+.rail{--u:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 30px;align-items:start;overflow:visible;margin-inline:0;padding:38px 12px 34px 0;scroll-snap-type:none}
+.rail .frame{width:auto}
+.rail .circle,.rail .round{--k:1}
+.rail .frame:nth-child(even){margin-top:46px}
+.rail .x{display:none}
+.trust{grid-template-columns:repeat(4,1fr);gap:0 36px}
+.panel{grid-template-columns:1.1fr .9fr;gap:52px;padding:44px 48px 46px}
+.panel::before{inset:8px;border-radius:8px}
+.band{grid-template-columns:1fr auto;column-gap:56px;align-items:center;padding:64px 64px 58px}
+.band .copy{justify-items:start}
+.band .copy .btn{width:auto;min-width:280px}
+.qr{display:block;position:relative;width:184px;transform:rotate(2deg)}
+.qr div{padding:16px;background:#fff;border-radius:12px;box-shadow:0 1px 1px rgba(0,0,0,.4),0 14px 24px -8px rgba(0,0,0,.7);outline:1.5px solid rgba(240,196,181,.85);outline-offset:-6px}
+.qr img{display:block;width:100%;height:auto}
+.qr p{margin-top:16px;text-align:center;font:700 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--foil-solid)}
+.foot{grid-template-columns:auto 1fr auto;justify-items:stretch;align-items:center;gap:30px;padding-top:52px;text-align:left}
+.foot .brand{flex-direction:row;gap:16px}
+.foot .script{font-size:38px}
+.foot .area{justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs><symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+<linearGradient id="rg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F6D6C8"/><stop offset=".28" stop-color="#DDA091"/><stop offset=".5" stop-color="#FCE4D8"/><stop offset=".74" stop-color="#D08779"/><stop offset="1" stop-color="#EDBFAF"/></linearGradient>
+<linearGradient id="rgu" gradientUnits="userSpaceOnUse" x1="3" y1="2" x2="21" y2="22"><stop offset="0" stop-color="#FCE4D8"/><stop offset=".5" stop-color="#E2A596"/><stop offset="1" stop-color="#C98277"/></linearGradient>
+<filter id="hand" x="-6%" y="-40%" width="112%" height="180%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="7" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="2.6" xChannelSelector="R" yChannelSelector="G"/></filter>
+</defs>
+</svg>
+<div class="page" id="top">
+<main>
+<section class="stage wine hero-stage" aria-labelledby="h-hero">
+<div class="wrap">
+<header class="top">
+<div class="brand">
+<div class="logo"><span><img src="img/logo.61d81fc1.webp" width="200" height="200" alt="SHAMZ Beauty Spot logo"></span></div>
+<div class="script" aria-hidden="true">Excellence<span>in Beauty</span></div>
+</div>
+<a class="chip" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>Chat</a>
+</header>
+<div class="hero">
+<div class="hero-copy">
+<p class="kicker"><span>Mobile Services</span><i></i></p>
+<h1 id="h-hero"><span>Hair &amp;</span><em class="foil-t">Makeup</em></h1>
+<svg class="swash" viewBox="0 0 250 20" fill="none" aria-hidden="true"><path d="M3 11.5 C38 4 72 17 120 9.5 S198 3.5 247 10.5" stroke="url(#rg)" stroke-width="4.6" stroke-linecap="round"/></svg>
+<ul class="tag">
+<li>Look Good</li>
+<li>Feel Confident</li>
+<li>Anywhere</li>
+</ul>
+</div>
+<div class="hero-photo">
+<figure class="frame arch" style="--ar:5/7;--rx:35.7%;--pos:50% 30%"><div class="mat"><div class="ph"><img src="img/hero.394e2340.webp" width="560" height="806" alt="Client with patterned cornrows and braids finished with wooden and cream beads, looking up at the camera" fetchpriority="high" decoding="async"></div></div></figure>
+<div class="badge" aria-hidden="true">We come<br>to you</div>
+</div>
+<div class="hero-cta" id="hero-cta">
+<a class="btn btn-pink" id="cta-main" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+<p class="phone"><span>Call or WhatsApp</span><a href="tel:+256759149922">0759 149 922</a></p>
+<p class="area"><svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></svg>Kampala &amp; Surrounding Areas</p>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" id="services" aria-labelledby="h-services">
+<div class="wrap">
+<h2 class="sh" id="h-services"><span>Our <em>Services</em></span><i></i></h2>
+<p class="lead">Choose a service to chat about it on WhatsApp. The message is already written for you.</p>
+<div class="menu">
+<div class="menu-grid">
+<div class="svc-block">
+<div class="svc-head">
+<h3>Hair<em>services</em></h3>
+<figure class="frame circle" style="--pos:38% 30%"><div class="mat"><div class="ph"><img src="img/profile_a.6eee63df.webp" width="180" height="235" alt="Client smiling in profile, cornrows leading into red ombre braids" loading="lazy" decoding="async"></div></div></figure>
+</div>
+<ul class="svc-list">
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Braids%20%26%20Cornrows." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Braids &amp; Cornrows<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Twists%20%26%20Locs." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Twists &amp; Locs<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Wigs%20%26%20Wig%20Installation." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Wigs &amp; Wig Installation<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Sew-ins%20%26%20Weaves." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Sew-ins &amp; Weaves<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Natural%20Hair%20Styling." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Natural Hair Styling<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Hair%20Treatments%20%26%20Care." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Hair Treatments &amp; Care<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Updos%20for%20Special%20Occasions." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Updos for Special Occasions<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+</ul>
+</div>
+<div class="orn" aria-hidden="true"><i></i><b></b><i></i></div>
+<div class="svc-block">
+<div class="svc-head">
+<h3>Makeup<em>services</em></h3>
+<figure class="frame circle" style="--pos:50% 42%"><div class="mat"><div class="ph"><img src="img/smile5.44644359.webp" width="180" height="190" alt="Client with a natural makeup look, smiling" loading="lazy" decoding="async"></div></div></figure>
+</div>
+<ul class="svc-list">
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Natural%20Everyday%20Look." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Natural Everyday Look<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Glam%20Makeup." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Glam Makeup<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Bridal%20Makeup." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Bridal Makeup<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Photoshoot%20Makeup." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Photoshoot Makeup<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Special%20Occasion%20Makeup." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Special Occasion Makeup<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+<li><a class="svc" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20Makeup%20Lessons%20%281-on-1%29." target="_blank" rel="noopener"><i class="dm" aria-hidden="true"></i><span class="t">Makeup Lessons (1-on-1)<span class="sr">, chat on WhatsApp</span></span><span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="stage wine work" id="work" aria-labelledby="h-work" style="margin-top:clamp(56px,10vw,96px)">
+<div class="wrap">
+<h2 class="sh" id="h-work"><span>Our <em class="foil-t">Work</em></span><i></i></h2>
+<div class="rail" tabindex="0" role="group" aria-label="Photos of our work, scroll sideways">
+<figure class="frame arch" style="--ar:3/4;--rx:37.5%;--pos:50% 22%"><div class="mat"><div class="ph"><img src="img/locs9.786905a9.webp" width="360" height="485" alt="Client with long dark locs finished with gold cuffs, looking at the camera" loading="lazy" decoding="async"></div></div><figcaption class="pill">Twists &amp; Locs</figcaption></figure>
+<figure class="frame circle" style="--pos:50% 78%"><div class="mat"><div class="ph"><img src="img/glam12.e49bde9e.webp" width="300" height="385" alt="Client with bronze eyeshadow and a coral lip, one hand resting on her head" loading="lazy" decoding="async"></div></div><figcaption class="pill">Glam Makeup</figcaption></figure>
+<figure class="frame arch" style="--ar:3/4;--rx:37.5%;--pos:50% 30%"><div class="mat"><div class="ph"><img src="img/sewin11.e8794ea4.webp" width="360" height="465" alt="Client with a long curly sew-in" loading="lazy" decoding="async"></div></div><figcaption class="pill">Sew-ins &amp; Weaves</figcaption></figure>
+<figure class="frame round" style="--ar:4/5;--pos:50% 35%"><div class="mat"><div class="ph"><img src="img/bridal13.3f3cdc1e.webp" width="340" height="394" alt="Bride with a sleek updo and pearl hairpins, one hand over her eye to show a ring" loading="lazy" decoding="async"></div></div><figcaption class="pill">Bridal Makeup</figcaption></figure>
+<figure class="frame arch" style="--ar:3/4;--rx:37.5%;--pos:50% 24%"><div class="mat"><div class="ph"><img src="img/beads4.da2776c2.webp" width="360" height="564" alt="Client with long knotless braids finished with beads, looking down" loading="lazy" decoding="async"></div></div><figcaption class="pill">Braids &amp; Cornrows</figcaption></figure>
+<figure class="frame round" style="--ar:4/5;--pos:50% 30%"><div class="mat"><div class="ph"><img src="img/makeup2.1da07d2d.webp" width="340" height="438" alt="Client with pink eyeshadow and winged liner, resting her chin on her hand" loading="lazy" decoding="async"></div></div><figcaption class="pill">Makeup</figcaption></figure>
+<figure class="frame circle" style="--pos:50% 40%"><div class="mat"><div class="ph"><img src="img/smile6.4ef37449.webp" width="300" height="309" alt="Client with a short curly style, laughing at the camera" loading="lazy" decoding="async"></div></div></figure>
+<figure class="frame arch" style="--ar:3/4;--rx:37.5%;--pos:50% 30%"><div class="mat"><div class="ph"><img src="img/cornrow3.8b680272.webp" width="360" height="469" alt="Client with a wave-pattern cornrow style" loading="lazy" decoding="async"></div></div><figcaption class="pill">Braids &amp; Cornrows</figcaption></figure>
+<figure class="frame round x" style="--ar:4/5;--pos:100% 50%"><div class="mat"><div class="ph"><img src="img/selfie_b.7e8fe248.webp" width="320" height="277" alt="Smiling client taking a selfie" loading="lazy" decoding="async"></div></div></figure>
+<figure class="frame circle x" style="--pos:60% 45%"><div class="mat"><div class="ph"><img src="img/selfie_c.b6cd9fcc.webp" width="280" height="275" alt="Client taking a selfie" loading="lazy" decoding="async"></div></div></figure>
+</div>
+</div>
+</section>
+<section class="sec" id="why" aria-labelledby="h-why">
+<div class="wrap">
+<h2 class="sh" id="h-why"><span>Your Beauty, <em>Our Priority</em></span><i></i></h2>
+<ul class="trust">
+<li><span class="ti"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="url(#rgu)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><b>Quality Service</b></li>
+<li><span class="ti"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="url(#rgu)"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg></span><b>Premium Products</b></li>
+<li><span class="ti"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="url(#rgu)"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><b>Your Satisfaction Matters</b></li>
+<li><span class="ti"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="url(#rgu)"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><b>Flexible Scheduling</b></li>
+</ul>
+</div>
+</section>
+<section class="sec" id="book" aria-labelledby="h-book">
+<div class="wrap">
+<h2 class="sh" id="h-book"><span>Book on <em>WhatsApp</em></span><i></i></h2>
+<p class="lead">Add what you know. We write the message for you and WhatsApp opens with it ready to send.</p>
+<div class="panel">
+<form class="fields" id="book-form" autocomplete="on" novalidate>
+<div class="field">
+<label for="f-service">Service</label>
+<div class="sel">
+<select id="f-service" name="service">
+<option value="">Choose a service (optional)</option>
+<optgroup label="Hair">
+<option value="Braids &amp; Cornrows">Braids &amp; Cornrows</option>
+<option value="Twists &amp; Locs">Twists &amp; Locs</option>
+<option value="Wigs &amp; Wig Installation">Wigs &amp; Wig Installation</option>
+<option value="Sew-ins &amp; Weaves">Sew-ins &amp; Weaves</option>
+<option value="Natural Hair Styling">Natural Hair Styling</option>
+<option value="Hair Treatments &amp; Care">Hair Treatments &amp; Care</option>
+<option value="Updos for Special Occasions">Updos for Special Occasions</option>
+</optgroup>
+<optgroup label="Makeup">
+<option value="Natural Everyday Look">Natural Everyday Look</option>
+<option value="Glam Makeup">Glam Makeup</option>
+<option value="Bridal Makeup">Bridal Makeup</option>
+<option value="Photoshoot Makeup">Photoshoot Makeup</option>
+<option value="Special Occasion Makeup">Special Occasion Makeup</option>
+<option value="Makeup Lessons (1-on-1)">Makeup Lessons (1-on-1)</option>
+</optgroup>
+</select>
+</div>
+</div>
+<div class="field">
+<label for="f-area">Where should we come?</label>
+<input id="f-area" name="area" type="text" autocomplete="address-level2" placeholder="Your area">
+</div>
+<div class="field">
+<label for="f-date">Preferred date (optional)</label>
+<input id="f-date" name="date" type="date">
+</div>
+<div class="field">
+<label for="f-name">Your name (optional)</label>
+<input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+</div>
+</form>
+<div class="out">
+<p class="lab">Your message</p>
+<p class="bubble" id="preview" aria-live="polite">Hello SHAMZ Beauty Spot, I would like to book an appointment.</p>
+<a class="btn btn-pink" id="send" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>Send on WhatsApp</a>
+<p class="note">You can edit the message in WhatsApp before you send it.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="stage wine close" id="contact" aria-label="Contact SHAMZ Beauty Spot">
+<div class="wrap">
+<div class="band">
+<div class="copy">
+<h2><span>Because You Deserve to</span> <em class="foil-t">Look &amp; Feel Amazing</em></h2>
+<a class="btn btn-pink" id="cta-end" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+<p class="phone"><span>Call or WhatsApp</span><a href="tel:+256759149922">0759 149 922</a></p>
+<p class="area"><svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></svg>Kampala &amp; Surrounding Areas</p>
+</div>
+<div class="qr">
+<div><img src="img/qr.c4021364.svg" width="29" height="29" alt="QR code that opens a WhatsApp chat with SHAMZ Beauty Spot"></div>
+<p>Scan to chat</p>
+</div>
+</div>
+<footer class="foot">
+<div class="brand">
+<div class="logo"><span><img src="img/logo.61d81fc1.webp" width="200" height="200" alt=""></span></div>
+<div class="script">Excellence in Beauty</div>
+</div>
+<p class="area"><svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></svg>Kampala &amp; Surrounding Areas</p>
+<a href="tel:+256759149922">0759 149 922</a>
+</footer>
+</div>
+</section>
+</main>
+</div>
+<div class="bar" id="bar">
+<a class="btn btn-pink" href="https://wa.me/256759149922?text=Hello%20SHAMZ%20Beauty%20Spot%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+</div>
+<script>
+(function(){
+var PHONE='256759149922';
+var $=function(id){return document.getElementById(id);};
+var svc=$('f-service'),area=$('f-area'),date=$('f-date'),nm=$('f-name'),prev=$('preview'),send=$('send'),form=$('book-form');
+function pretty(v){
+if(!v) return '';
+var p=v.split('-');
+if(p.length!==3) return '';
+var d=new Date(+p[0],+p[1]-1,+p[2]);
+if(isNaN(d.getTime())) return '';
+try{return d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});}catch(e){return v;}
+}
+function build(){
+var lines=['Hello SHAMZ Beauty Spot, I would like to book '+(svc.value||'an appointment')+'.'];
+var a=area.value.replace(/\s+/g,' ').trim(); if(a) lines.push('Area: '+a);
+var d=pretty(date.value); if(d) lines.push('Date: '+d);
+var n=nm.value.replace(/\s+/g,' ').trim(); if(n) lines.push('Name: '+n);
+return lines.join('\n');
+}
+function update(){
+var m=build();
+prev.textContent=m;
+send.href='https://wa.me/'+PHONE+'?text='+encodeURIComponent(m);
+}
+if(svc&&area&&date&&nm&&prev&&send){
+try{
+var t=new Date();
+date.min=t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-2)+'-'+('0'+t.getDate()).slice(-2);
+}catch(e){}
+[svc,area,date,nm].forEach(function(el){el.addEventListener('input',update);el.addEventListener('change',update);});
+if(form){form.addEventListener('submit',function(e){e.preventDefault();send.focus();});}
+update();
+}
+/* phone bar: show it only while neither main button is on screen */
+var bar=$('bar'),a1=$('cta-main'),a2=$('cta-end');
+if(bar&&a1&&a2&&'IntersectionObserver' in window){
+var seen={};
+bar.classList.add('is-hidden');
+var io=new IntersectionObserver(function(list){
+list.forEach(function(en){seen[en.target.id]=en.isIntersecting;});
+var any=false;for(var k in seen){if(seen[k]){any=true;}}
+bar.classList.toggle('is-hidden',any);
+},{threshold:0.2});
+io.observe(a1);io.observe(a2);
+}
+})();
+</script>
+</body>
+</html>
