@@ -79,7 +79,7 @@ img,svg{max-width:100%}a{color:inherit}p,h1,h2,h3,figure,ul{margin:0}ul{padding:
 .intro .dm{display:inline-block;width:.16em;height:.16em;background:var(--gold);transform:rotate(45deg);margin:0 .34em;vertical-align:.34em}
 .intro .come{margin-top:34px;font:500 12px/1 var(--sans);letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
 /* services */
-.svc{padding:0 0 clamp(90px,13vw,170px)}
+.svc{padding:clamp(84px,12vw,150px) 0 clamp(90px,13vw,170px)}
 .lead{margin-top:20px;max-width:44ch;color:var(--ink2);font-size:17px}
 .cols{margin-top:clamp(40px,6vw,72px);display:grid;gap:56px}
 .col h3{display:flex;align-items:baseline;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid var(--ink);font:italic 300 clamp(44px,8vw,68px)/1 var(--serif)}
@@ -133,7 +133,17 @@ img,svg{max-width:100%}a{color:inherit}p,h1,h2,h3,figure,ul{margin:0}ul{padding:
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:14px var(--gr) calc(12px + env(safe-area-inset-bottom,0px)) var(--gl);background:linear-gradient(to top,rgba(16,13,12,.97) 66%,rgba(16,13,12,0));transition:transform .25s ease}
 .bar .btn{width:100%}
 .bar.is-hidden{transform:translateY(115%);visibility:hidden;transition:transform .25s ease,visibility 0s .25s}
-@media (min-width:600px){.grid{columns:3}.pillars{grid-template-columns:repeat(4,1fr)}}
+/* details band */
+.det-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
+.det figure{margin:0;overflow:hidden;aspect-ratio:1;background:var(--night2)}
+.det img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+@media (hover:hover){.det figure:hover img{transform:scale(1.045)}}
+/* motion */
+.hero-photo img{animation:settle 2.4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes settle{from{transform:scale(1.07)}to{transform:scale(1)}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media (min-width:600px){.grid{columns:3}.pillars{grid-template-columns:repeat(4,1fr)}.det-grid{grid-template-columns:repeat(3,1fr)}}
 @media (min-width:880px){
 :root{--gl:max(40px,env(safe-area-inset-left,0px));--gr:max(40px,env(safe-area-inset-right,0px))}
 .nav{display:flex}.top .book{display:none}
@@ -147,6 +157,7 @@ img,svg{max-width:100%}a{color:inherit}p,h1,h2,h3,figure,ul{margin:0}ul{padding:
 .cta{grid-auto-flow:column;align-items:center;justify-content:start;gap:44px}
 .cols{grid-template-columns:1fr 1fr;gap:88px}
 .grid{columns:4;column-gap:22px}.grid figure{margin-bottom:22px}
+.det-grid{grid-template-columns:repeat(6,1fr)}
 .panel{grid-template-columns:1fr 1fr;gap:110px;align-items:start}
 .out .btn{width:auto;justify-self:start;min-width:300px}
 .close .wrap{display:grid;grid-template-columns:1fr auto;column-gap:90px;align-items:end}
@@ -160,7 +171,7 @@ img,svg{max-width:100%}a{color:inherit}p,h1,h2,h3,figure,ul{margin:0}ul{padding:
 .bar{display:none}.close{padding-bottom:56px}
 }
 @media (max-width:379px){.brand b{letter-spacing:.2em;font-size:11px}.btn{padding:0 22px;letter-spacing:.2em}}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
@@ -187,6 +198,15 @@ img,svg{max-width:100%}a{color:inherit}p,h1,h2,h3,figure,ul{margin:0}ul{padding:
 <section class="intro" aria-label="Look Good, Feel Confident, Anywhere"><div class="wrap">
 <p class="big">Look Good<span class="dm" aria-hidden="true"></span>Feel Confident<span class="dm" aria-hidden="true"></span><i>Anywhere</i></p>
 <p class="come">We come to you</p>
+</div></section>
+
+<section class="night det" aria-label="Close-up details of our work"><div class="det-grid">
+<figure><img src="img/d-pattern.65e3f8ac.webp" width="520" height="520" alt="Close-up of a wave-pattern cornrow style" loading="lazy" decoding="async"></figure>
+<figure><img src="img/d-hairpin.a699fc8d.webp" width="520" height="520" alt="Close-up of a sleek updo with pearl flower hairpins" loading="lazy" decoding="async"></figure>
+<figure><img src="img/d-beads.50af033f.webp" width="520" height="520" alt="Close-up of knotless braids finished with wooden, cream and clear beads" loading="lazy" decoding="async"></figure>
+<figure><img src="img/d-eyes.07814096.webp" width="520" height="520" alt="Close-up of bronze eyeshadow with a berry lip" loading="lazy" decoding="async"></figure>
+<figure><img src="img/d-ring.2e438fd9.webp" width="520" height="520" alt="Close-up of long lashes and a hand wearing a ring" loading="lazy" decoding="async"></figure>
+<figure><img src="img/d-curls.77360ee3.webp" width="520" height="520" alt="Close-up of a curly sew-in" loading="lazy" decoding="async"></figure>
 </div></section>
 
 <section class="svc" id="services" aria-labelledby="h-svc"><div class="wrap">
@@ -313,6 +333,10 @@ try{var t=new Date();date.min=t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-
 [svc,area,date,nm].forEach(function(el){el.addEventListener('input',update);el.addEventListener('change',update);});
 if(form){form.addEventListener('submit',function(e){e.preventDefault();send.focus();});}
 update();}
+if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches)){
+var ro=new IntersectionObserver(function(l){l.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');ro.unobserve(en.target);}});},{threshold:0.1,rootMargin:'0px 0px -5% 0px'});
+[].forEach.call(document.querySelectorAll('.intro .wrap>*,.svc .wrap>.lead,.col,.det figure,.grid figure,.pillars li,.panel,.close .wrap>div:first-child'),function(el){
+el.classList.add('rv');el.style.setProperty('--d',(([].indexOf.call(el.parentNode.children,el)%4)*0.09)+'s');ro.observe(el);});}
 var bar=$('bar'),a1=$('cta-main'),a2=$('cta-end');
 if(bar&&a1&&a2&&'IntersectionObserver' in window){var seen={};bar.classList.add('is-hidden');
 var io=new IntersectionObserver(function(list){list.forEach(function(en){seen[en.target.id]=en.isIntersecting;});
