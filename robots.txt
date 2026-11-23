@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shamz-beauty-spot.vercel.app/sitemap.xml
